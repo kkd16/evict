@@ -75,14 +75,13 @@ jobs:
             'class Evict < Formula' \
             "  desc \"Kill whatever process is using a given port\"" \
             "  homepage \"https://github.com/kkd16/evict\"" \
-            "  version \"${VERSION}\"" \
             '  license "MIT"' \
             '' \
             '  if OS.mac?' \
-            "    url \"https://github.com/kkd16/evict/releases/download/v#{version}/evict-macos-arm\"" \
+            "    url \"https://github.com/kkd16/evict/releases/download/v${VERSION}/evict-macos-arm\"" \
             "    sha256 \"${SHA_ARM}\"" \
             '  elsif OS.linux?' \
-            "    url \"https://github.com/kkd16/evict/releases/download/v#{version}/evict-linux-amd64\"" \
+            "    url \"https://github.com/kkd16/evict/releases/download/v${VERSION}/evict-linux-amd64\"" \
             "    sha256 \"${SHA_LINUX}\"" \
             '  end' \
             '' \
