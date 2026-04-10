@@ -73,7 +73,7 @@ jobs:
 
           printf '%s\n' \
             'class Evict < Formula' \
-            "  desc \"Kill whatever process is using a given port.\"" \
+            "  desc \"Kill whatever process is using a given port\"" \
             "  homepage \"https://github.com/kkd16/evict\"" \
             "  version \"${VERSION}\"" \
             '  license "MIT"' \

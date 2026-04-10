@@ -28,13 +28,12 @@ fn pick<'a>(items: &'a [&str]) -> &'a str {
 }
 
 const KILL_INSULTS: &[&str] = &[
-    "Get the fuck off my port.",
+    "Get the fuck outta here.",
     "Fuck off.",
     "You're done, dickhead.",
     "Die, bitch.",
     "Piss off.",
     "Eat shit.",
-    "Fuck outta here.",
     "Killed, asshole.",
 ];
 
