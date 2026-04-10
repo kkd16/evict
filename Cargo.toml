@@ -1,0 +1,9 @@
+[package]
+name = "evict"
+version = "1.0.0"
+edition = "2024"
+authors = ["kkd16"]
+
+[profile.release]
+strip = true
+lto = true
