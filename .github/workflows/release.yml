@@ -78,13 +78,11 @@ jobs:
             "  version \"${VERSION}\"" \
             '  license "MIT"' \
             '' \
-            '  on_macos do' \
-            "    url \"https://github.com/kkd16/evict/releases/download/v${VERSION}/evict-macos-arm\"" \
+            '  if OS.mac?' \
+            "    url \"https://github.com/kkd16/evict/releases/download/v#{version}/evict-macos-arm\"" \
             "    sha256 \"${SHA_ARM}\"" \
-            '  end' \
-            '' \
-            '  on_linux do' \
-            "    url \"https://github.com/kkd16/evict/releases/download/v${VERSION}/evict-linux-amd64\"" \
+            '  elsif OS.linux?' \
+            "    url \"https://github.com/kkd16/evict/releases/download/v#{version}/evict-linux-amd64\"" \
             "    sha256 \"${SHA_LINUX}\"" \
             '  end' \
             '' \
